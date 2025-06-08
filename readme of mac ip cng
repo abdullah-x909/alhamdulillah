@@ -1,0 +1,86 @@
+# 🦑 MAC & IP Changer with Tor — Ultimate Privacy Tool for Linux
+
+> **Lightweight, automatic MAC & IP changer with Tor integration, auto-start, and user-friendly features. Perfect for privacy enthusiasts, pentesters, and anyone who values anonymity!**
+
+---
+
+## 🚀 Features
+
+- **Auto-detects Linux distribution**
+- **Auto-detects active network interface**
+- **Changes MAC address randomly or lets you set a custom MAC**
+- **Changes public IP using the Tor network**
+- **Prompts for custom delay between changes (default: 30 seconds)**
+- **Installs all dependencies automatically**
+- **Adds itself to system startup for continuous protection**
+- **Minimal dependencies, lightning fast, Bash-based**
+
+---
+
+## 🛡️ Why Use This Tool?
+
+Keeping your identity protected on public networks or during sensitive activities is crucial. This script combines MAC address spoofing and Tor-based IP changing for maximum privacy — all in one simple tool.
+
+---
+
+## ⚡ Quick Start
+
+```bash
+git clone https://github.com/abdullah-x909/mac_ip_tor_changer.git
+cd mac_ip_tor_changer
+chmod +x mac_ip_tor_changer.sh
+sudo ./mac_ip_tor_changer.sh
+```
+
+- The script will:
+  - Install all required packages (`macchanger`, `tor`) if missing
+  - Detect your main network interface
+  - Ask how often to rotate your MAC & IP (you set the delay!)
+  - Ask if you want a specific MAC or randomization
+  - Start changing your MAC & IP automatically
+  - Add itself to system startup so you’re always protected!
+
+---
+
+## ⚙️ Requirements
+
+- Linux (Debian/Ubuntu, Fedora, Arch, etc.)
+- sudo privileges
+
+---
+
+## 📝 Script Overview
+
+- **Privacy First:** Each cycle, your MAC address is changed (random or custom), and Tor is restarted for a new IP.
+- **User-Friendly:** No manual setup — just run and relax!
+- **Auto-Startup:** Adds itself to your crontab (@reboot), so you’re always anonymous after a reboot.
+
+---
+
+## 🛠️ Advanced
+
+- To remove from startup: `crontab -e` and delete the relevant line.
+- To check Tor status: `sudo systemctl status tor`
+- To check your new IP: Visit [https://check.torproject.org/](https://check.torproject.org/) after the script runs.
+
+---
+
+## 🎯 Ideal For
+
+- Pentesters & security professionals
+- Journalists & activists
+- Privacy lovers
+- Anyone using public Wi-Fi
+
+---
+
+## 💡 Disclaimer
+
+This tool is for **educational and ethical use only**. Changing your MAC/IP may disrupt your network connection or violate your ISP/TOS. Use responsibly.
+
+---
+
+## ⭐️ Star this repo if you like it!  
+Contributions and feedback welcome.
+
+---
